@@ -11,7 +11,7 @@
     <p>Publicado por {{post.author}}</p>
     <p>Categorias:
         {% for category in post.categories.all %}
-            {{category.name}}{% if not forloop.last %}, {% endif %}
+            <a href="{% url 'category' category.id %}">{{category.name}}</a>{% if not forloop.last %}, {% endif %}
         {% endfor %}
     </p>
 {% endfor %}
