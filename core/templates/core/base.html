@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
 
-    <title> Web | Incio </title>
+    <title> Web | {% block title %}{% endblock %} </title>
     {% load static %}
     <link href="{% static 'core/css/estilos.css' %}" rel="stylesheet" type="text/css">
 </head>
@@ -33,7 +33,7 @@
           </a>
         {% endif %}
         {% if LINK_FACEBOOK %}
-          <a href="{{LINK_FACEBOOK}}" class="link">
+          <a href="{{LINK_FACEBOOK}}" class="link">facebook
             <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>

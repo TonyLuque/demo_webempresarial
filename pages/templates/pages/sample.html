@@ -5,7 +5,10 @@
 
 {% block content %}
 <h1>{{page.title}}</h1>
+<!-- Con el "linebreaks" permite que halla saltos de linea en el contenido
 <p>{{page.content|linebreaks}}</p>
+-->
+<p>{{page.content|safe}}</p> <!--Con "safe" le dice a Django que lea el html que esta en el contenido y lo interprete-->
 Saber cual es el usuario autenticado "{{user}}"
 
 {% if user.is_authenticated %}
