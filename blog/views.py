@@ -5,7 +5,6 @@ from .models import Post, Category
 
 def blog(request):
     posts = Post.objects.all()
-    print(posts[0])
     return render(request, "blog/blog.html", {'posts':posts})
 
 
