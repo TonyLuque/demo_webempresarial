@@ -16,7 +16,3 @@ def store(request):
 
 def contact(request):
     return HttpResponse("Soy el contacto")
-
-
-def sample(request):
-    return HttpResponse("Soy el sample")
