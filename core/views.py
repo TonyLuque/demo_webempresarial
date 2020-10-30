@@ -12,7 +12,3 @@ def about(request):
 
 def store(request):
     return HttpResponse("Soy el visitanos")
-
-
-def contact(request):
-    return HttpResponse("Soy el contacto")
