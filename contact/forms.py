@@ -2,7 +2,7 @@ from django import forms
 
 class ContactForm(forms.Form):
     name = forms.CharField(label='Nombre', required=True, widget=forms.TextInput(
-        attrs={'class':'nombre_clase', 'placeholder': 'Arturo Rivera'} # Se usa para que Django añada las propiedades al crear el html
+        attrs={'class':'nombre_clase', 'placeholder': 'Cosme Fulanito'} # Se usa para que Django añada las propiedades al crear el html
     ), min_length=3, max_length=100)
     email = forms.EmailField(label='Email', required=True, widget=forms.EmailInput(
         attrs={'placeholder':'demo@demomail.com'}
