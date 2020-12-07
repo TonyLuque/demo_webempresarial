@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
@@ -7,8 +7,7 @@ def home(request):
 
 
 def about(request):
-    return HttpResponse("Soy la historia")
-
+    return render(request, "core/about.html")
 
 def store(request):
-    return HttpResponse("Soy el visitanos")
+    return render(request, "core/store.html")
