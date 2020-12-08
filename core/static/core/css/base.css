@@ -1,18 +1,62 @@
 :root {
-    --white: #f3f2da;
-    --green: #4e8d7c;
-    --green_dark: #045762;
-    --pink: #ea97ad;
+    --white: #faf8f9;
+    --brown: #c5a18b;
+    --brown_dark: #bb7427;
+    --yellow: #f9cb8b;
+    --purple: #e2dadd;
 }
 
 * {
     padding: 0%;
     margin: 0%;
     text-decoration: none;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    list-style: none;
 }
 
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav__container {
+    background-color: var(--brown_dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+footer {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__icons {
+    display: inherit;
+    flex-direction: row;
+}
+
+.footer__icons--all {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.footer__icon--twitter {
+    background-image: url('../img/iconos/twitter.svg');
+}
+
+.footer__icon--facebook {
+    background-image: url('../img/iconos/facebook.svg');
+}
+
+.footer__icon--instagram {
+    background-image: url('../img/iconos/instagram.svg');
 }

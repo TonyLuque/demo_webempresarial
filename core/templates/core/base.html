@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset='utf-8'>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Web | {% block title %}{% endblock %} </title>
     {% load static %}
     <link href="{% static 'core/css/base.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <header class="nav__container">
     <nav>
         <ul>
             <li><a href="{% url 'home' %}">Inicio</a></li>
@@ -18,37 +19,19 @@
             <li><a href="{% url 'blog' %}">Blog</a></li>
         </ul>
     </nav>
-    {% block content %}{% endblock %}
-
-<!-- Pié de página -->
-<footer>
-    <div>
-      <p>
-        {% if LINK_TWITTER %}
-          <a href="{{LINK_TWITTER}}">Twitter
-            <span>
-              <i></i>
-              <i></i>
-            </span>
-          </a>
-        {% endif %}
-        {% if LINK_FACEBOOK %}
-          <a href="{{LINK_FACEBOOK}}">Facebook
-            <span>
-              <i></i>
-              <i></i>
-            </span>
-          </a>
-        {% endif %}
-        {% if LINK_INSTAGRAM %}
-          <a href="{{LINK_INSTAGRAM}}">Instagram
-            <span>
-              <i></i>
-              <i></i>
-            </span>
-          </a>
-        {% endif %}
-      </p>
+    <!-- Pié de página -->
+    <footer>
+      <div class="footer__icons">
+          {% if LINK_TWITTER %}
+            <a class="footer__icons--all footer__icon--twitter" href="{{LINK_TWITTER}}"></a>
+          {% endif %}
+          {% if LINK_FACEBOOK %}
+            <a class="footer__icons--all footer__icon--facebook" href="{{LINK_FACEBOOK}}"></a>
+          {% endif %}
+          {% if LINK_INSTAGRAM %}
+            <a class="footer__icons--all footer__icon--instagram" class="icon__instagram" href="{{LINK_INSTAGRAM}}"></a>
+          {% endif %}
+      </div>  
       <p >
         {% load pages_extras %}
         {% get_page_list as page_list %}
@@ -57,7 +40,9 @@
         {% endfor %}
       </p>
       <p >&copy; Esponjocitos 2020</p>
-    </div>
     </footer>
+  </header>
+
+  {% block content %}{% endblock %}
 </body>
 </html>
