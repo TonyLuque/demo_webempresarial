@@ -8,8 +8,8 @@
     <link href="{% static 'core/css/base.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header class="menu">
-    <span class="icons--all menu__icon-close" ></span>
+  <header id="menu" class="menu">
+    <span onclick="menu()" class="icons--all menu__icon-close" ></span>
     <span class="icons--all menu__logo-image"></span>
     <nav>
         <ul>
@@ -44,7 +44,19 @@
       <p class="copy" >&copy; Esponjocitos 2020</p>
     </footer>
   </header>
-
+  <section class="aux_nav" >
+    <span onclick="menu()" class="icons--all menu__logo-image" ></span>
+    <span class="icons--all aux_nav__icon--arrow"></span>
+  </section>
   {% block content %}{% endblock %}
+  <script>
+     function menu(){
+         if (document.getElementById("menu").style.display == "none" || document.getElementById("menu").style.display == ""){
+             document.getElementById("menu").style.display = "flex";
+        } else {
+            document.getElementById("menu").style.display = "none";
+        }
+    }
+  </script>
 </body>
 </html>

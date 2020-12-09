@@ -31,7 +31,7 @@ html {
 
 .menu{
     background-color: var(--light_purple);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     height: 100vh;
@@ -54,6 +54,12 @@ html {
 
 nav ul li a {
     font-size: 2rem;
+}
+
+.aux_nav {
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--light_purple);
 }
 
 footer {
