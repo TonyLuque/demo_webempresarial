@@ -1,8 +1,13 @@
 {% extends 'core/base.html' %}
 
+{% block title %}Inicio{% endblock %}
+
 {% load static %}
 
-{% block title %}Inicio{% endblock %}
+{% block style %}
+  <link href="{% static 'core/css/index.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
 
 {% block content %}
 <!-- Cabecera -->

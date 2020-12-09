@@ -34,7 +34,9 @@ html {
     display: none;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: space-between;
+    padding: 2rem 0;
+    height: 100%;
     width: 100vw;
     font-size: 1.6rem;
     position: fixed;
@@ -44,6 +46,7 @@ html {
     width: 2.8rem;
     height: 2.8rem;
     background-image: url('../img/iconos/icon__close.svg');
+    margin-left: 75%;
 }
 
 .menu__logo-image {
@@ -52,14 +55,39 @@ html {
     background-image: url('../img/logo.svg');
 }
 
+.menu ul {
+    text-align: center;
+}
+
 nav ul li a {
     font-size: 2rem;
+    line-height: 5rem;
+}
+
+a {
+    color: var(--black);
 }
 
 .aux_nav {
     width: 100vw;
-    height: 10rem;
+    height: 6rem;
     background-color: var(--light_purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.aux_nav__logo-text {
+    width: 12rem;
+    height: 3rem;
+    background-image: url('../img/logo__text.svg');
+}
+
+.aux_nav__icon-dots {
+    width: 3rem;
+    height: 3rem;
+    background-image: url('../img/iconos/icon__menu.svg');
 }
 
 footer {
@@ -71,6 +99,7 @@ footer {
 .footer__icons {
     display: inherit;
     flex-direction: row;
+    margin-bottom: 1rem;
 }
 
 .footer__icons--all {
@@ -92,4 +121,9 @@ footer {
 
 .urls, .copy {
     font-size: 1.4rem;
+}
+
+.copy {
+    color: var(--brown_dark);
+    margin-top: 1.3rem;
 }
