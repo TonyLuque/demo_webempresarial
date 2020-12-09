@@ -8,7 +8,9 @@
     <link href="{% static 'core/css/base.css' %}" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header class="nav__container">
+  <header class="menu">
+    <span class="icons--all menu__icon-close" ></span>
+    <span class="icons--all menu__logo-image"></span>
     <nav>
         <ul>
             <li><a href="{% url 'home' %}">Inicio</a></li>
@@ -23,23 +25,23 @@
     <footer>
       <div class="footer__icons">
           {% if LINK_TWITTER %}
-            <a class="footer__icons--all footer__icon--twitter" href="{{LINK_TWITTER}}"></a>
+            <a class="icons--all footer__icons--all footer__icon--twitter" href="{{LINK_TWITTER}}"></a>
           {% endif %}
           {% if LINK_FACEBOOK %}
-            <a class="footer__icons--all footer__icon--facebook" href="{{LINK_FACEBOOK}}"></a>
+            <a class="icons--all footer__icons--all footer__icon--facebook" href="{{LINK_FACEBOOK}}"></a>
           {% endif %}
           {% if LINK_INSTAGRAM %}
-            <a class="footer__icons--all footer__icon--instagram" class="icon__instagram" href="{{LINK_INSTAGRAM}}"></a>
+            <a class="icons--all footer__icons--all footer__icon--instagram" class="icon__instagram" href="{{LINK_INSTAGRAM}}"></a>
           {% endif %}
       </div>  
       <p >
         {% load pages_extras %}
         {% get_page_list as page_list %}
         {% for page in page_list %}
-          <a href="{% url 'page' page.id page.title|slugify %}">{{page.title}}</a> {% if not forloop.last %}·{% endif %} 
+          <a class="urls" href="{% url 'page' page.id page.title|slugify %}">{{page.title}}</a> {% if not forloop.last %}·{% endif %} 
         {% endfor %}
       </p>
-      <p >&copy; Esponjocitos 2020</p>
+      <p class="copy" >&copy; Esponjocitos 2020</p>
     </footer>
   </header>
 

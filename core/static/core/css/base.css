@@ -1,9 +1,12 @@
 :root {
     --white: #faf8f9;
-    --brown: #c5a18b;
-    --brown_dark: #bb7427;
-    --yellow: #f9cb8b;
-    --purple: #e2dadd;
+    --brown: #F9CB8B;
+    --brown_dark: #BB7427;
+    --light_purple: #E2DADD;
+    --purple: #583D72;
+    --black: #333333;
+    --gray: #706C61;
+
 }
 
 * {
@@ -15,16 +18,42 @@
 }
 
 html {
+    font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav__container {
-    background-color: var(--brown_dark);
+.icons--all {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    background-color: var(--light_purple);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     height: 100vh;
+    width: 100vw;
+    font-size: 1.6rem;
+    position: fixed;
+}
+
+.menu__icon-close {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-image: url('../img/iconos/icon__close.svg');
+}
+
+.menu__logo-image {
+    width: 13rem;
+    height: 13rem;
+    background-image: url('../img/logo.svg');
+}
+
+nav ul li a {
+    font-size: 2rem;
 }
 
 footer {
@@ -39,14 +68,9 @@ footer {
 }
 
 .footer__icons--all {
-    display: inline-block;
     width: 4rem;
     height: 4rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
 
 .footer__icon--twitter {
     background-image: url('../img/iconos/twitter.svg');
@@ -58,4 +82,8 @@ footer {
 
 .footer__icon--instagram {
     background-image: url('../img/iconos/instagram.svg');
+}
+
+.urls, .copy {
+    font-size: 1.4rem;
 }
