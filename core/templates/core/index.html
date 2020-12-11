@@ -12,20 +12,25 @@
 {% block content %}
 <!-- Cabecera -->
 <main>
-  <section>
-    <img src="{% static 'core/img/intro.png' %}" alt="">
-    <h2 >Déjate sorprender</h2>
-    <h3>Te gustará</h3>
-    <p >Trabajamos sólo con los mejores ingredientes. Una vez lo pruebes, nuestro café será la mejor forma de empezar tu rutina diaria.
+  <section class="header">
+    <span class="icons--all"></span>
+    <h1>Inicio</h1>
+  </section>
+  <section class="text">
+    <h1>" No hay <span>amor</span> más sincero que el amor a la comida ".</h1>
+    <p >Apostamos por la innovación y el desarrollo de nuevos productos elaborados de forma tradiconal con amor y entrega total diaria con ingredientes frescos y cien por cien naturales.﻿ diferenciandonos, por su sabor y calidad como por su fórmula innovadora. 
     </p>
     <a  href="store.html">Visítanos</a>
   </section>
   
   <!-- Mensaje -->
-  <section >
-    <h2 >Compromiso total</h2>
-    <h3>Garantizado</h3>
-    <p >Sed pulvinar blandit elit id venenatis. Ut eget lacus neque. Nullam justo quam, efficitur nec turpis vitae, efficitur posuere ligula. Proin ut turpis orci. Aenean porta sodales lectus faucibus pellentesque. In sed felis iaculis, rhoncus felis a, maximus mi.</p>
+  <section class="carousel">
+    <picture><img src="{% static 'core/img/intro.png' %}" alt=""></picture>
+    
+  </section>
+
+  <section>
+    <span class="icons--all aux_nav__logo-text" ></span>
   </section>
 </main>
 {% endblock %}
