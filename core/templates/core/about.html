@@ -1,14 +1,40 @@
 {% extends 'core/base.html' %}
 
-{% load static %}
-
 {% block title %}Historia{% endblock %}
 
+{% load static %}
+
+{% block style %}
+<link href="{% static 'core/css/about.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
-<h2>
-    <span class="section-heading-upper">Tradición familiar italiana</span>
-    <span class="section-heading-lower">Nuestra historia</span>
-</h2>
-<p>Fundada en 1987 consectetur adipiscing elit. Donec leo dui, vehicula vel dapibus ac, tempus non enim. Nunc tempor vel lacus vel gravida. Nam sit amet pellentesque mi. </p>
-<p>Curabitur efficitur pellentesque tellus nec volutpat. In viverra mattis sem, facilisis condimentum mi rutrum ut. Quisque ut pellentesque dui.Nullam eu vehicula metus. Pellentesque id interdum elit. Aenean in efficitur enim.</p>
+<!-- Cabecera -->
+<main>
+  <section class="header">
+    <span class="icons--all"></span>
+    <h1>Historia</h1>
+</section>
+
+<!-- Mensaje -->
+  <div class="message">
+    <section class="text">
+        <h1>“ La <span>tradición</span> no se hereda se conquista. ”</h1>
+        <h4>ANDRÉ-GEORGES MALRAUX</h4>
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dolor morbi nec placerat pellentesque. Consequat etiam diam massa habitasse amet viverra.</p>
+        <p>Pharetra, sed nibh cras eget. Odio semper commodo lectus consequat. Sagittis, vitae, tortor vitae eget non cursus donec.</p>
+      </section>
+      
+      <section class="square">
+        <figure><img src="{% static 'core/img/intro.png' %}" alt=""></figure>
+        <figure><img src="{% static 'core/img/intro.png' %}" alt=""></figure>
+        <figure><img src="{% static 'core/img/intro.png' %}" alt=""></figure>
+        <figure><img src="{% static 'core/img/intro.png' %}" alt=""></figure>
+      </section>
+  </div>
+
+  <section>
+    <span class="icons--all aux_nav__logo-text" ></span>
+  </section>
+</main>
 {% endblock %}

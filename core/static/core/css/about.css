@@ -26,19 +26,18 @@ section {
     width: 75%;
 }
 
-.text, .carousel {
+.text, .square {
     width: 100%;
 }
 
-.carousel picture {
-    width: 90%;
-}
-
-.carousel picture img {
+.square figure {
     width: 100%;
-    height: 100%;
+    height: 99%;
 }
 
+.square figure img {
+    width: 100%;
+}
 
 
 @media (min-width: 1200px){
@@ -53,6 +52,7 @@ section {
 
     .square figure {
         width: 50%;
+        height: 49%;
         float: left;
     }
 
