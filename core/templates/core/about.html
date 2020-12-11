@@ -5,6 +5,7 @@
 {% load static %}
 
 {% block style %}
+<link href="{% static 'core/css/main_base.css' %}" rel="stylesheet" type="text/css">
 <link href="{% static 'core/css/about.css' %}" rel="stylesheet" type="text/css">
 {% endblock %}
 
@@ -33,7 +34,7 @@
       </section>
   </div>
 
-  <section>
+  <section class="bottom_logo">
     <span class="icons--all aux_nav__logo-text" ></span>
   </section>
 </main>

@@ -1,28 +1,46 @@
 {% extends 'core/base.html' %}
 
-{% load static %}
-
 {% block title %}Historia{% endblock %}
 
+{% load static %}
+
+{% block style %}
+<link href="{% static 'core/css/main_base.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'core/css/store.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
-<h2 >
-    <span >Te esperamos</span>
-    <span >Visítanos</span>
-  </h2>
-  <ul >
-    <li >
-      Lunes a viernes
-      <span >7:00 a 20:00</span>
-    </li>
-    <li >
-      Sábados
-      <span >9:00 a 17:00</span>
-    </li>
-    <li >
-      Domingos
-      <span >Cerrado</span>
-    </li>
-  </ul>
-  <p><em><strong>Archilango Perez nº 806 bajo, (46781)</strong><br>Varlaquia</em></p>
-  <p><small><em>Llámanos y pregunta</em></small><br>(657) 847-5120</p>
+<!-- Cabecera -->
+<main>
+  <section class="header">
+    <span class="icons--all"></span>
+    <h1>Visitanos</h1>
+</section>
+
+<!-- Mensaje -->
+  <div class="message">
+    <section class="text">
+        <h1>La sonrisa es la forma universal de decir <span>¡Bienvenido!</span></h1>
+        <h2 >
+          <span >Te esperamos</span>
+          <span >Visítanos</span>
+        </h2>
+        <ul >
+          <li >Lunes a viernes<span >7:00 a 20:00</span></li>
+          <li >Sábados<span >9:00 a 17:00</span></li>
+          <li >Domingos<span >Cerrado</span></li>
+        </ul>
+        <p><em><strong>Archilango Perez nº 806 bajo, (46781)</strong><br>Varlaquia</em></p>
+        <p><small><em>Llámanos y pregunta</em></small><br>(657) 847-5120</p>
+    </section>
+      
+    <section class="img__container">
+      <figure><img src="{% static 'core/img/intro.png' %}" alt=""></figure>
+    </section>
+  </div>
+
+  <section class="bottom_logo">
+    <span class="icons--all aux_nav__logo-text" ></span>
+  </section>
+</main>
 {% endblock %}

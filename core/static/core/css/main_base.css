@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--white);
+}
+
+section {
+    width: 75%;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 4rem 0;
+}
+
+.header span{
+    background-image: url('../img/espiga.svg');
+    width: 6.5rem;
+    height: 1.8rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--brown_dark);
+}
+
+.message {
+    display: inherit;
+    flex-direction: column;
+    width: 75%;
+}
+
+.text {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 4rem;
+    margin-bottom: 5rem;
+}
+
+.text h1 span {
+    color: var(--brown_dark);
+}
+
+.text p {
+    font-size: 1.6rem;
+}
+
+.square figure {
+    width: 100%;
+}
+
+.square figure img {
+    width: 100%;
+}
+
+.bottom_logo {
+    margin: 3rem 0;
+}
+
+@media (min-width: 1200px){
+
+    .message {
+        flex-direction: row;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+}

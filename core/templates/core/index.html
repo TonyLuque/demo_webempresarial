@@ -5,6 +5,7 @@
 {% load static %}
 
 {% block style %}
+  <link href="{% static 'core/css/main_base.css' %}" rel="stylesheet" type="text/css">
   <link href="{% static 'core/css/index.css' %}" rel="stylesheet" type="text/css">
 {% endblock %}
 
@@ -26,12 +27,12 @@
   </section>
   
   <section class="carousel">
-    <picture><img src="{% static 'core/img/intro.png' %}" alt=""></picture>
+    <figure><img src="{% static 'core/img/intro.png' %}" alt=""></figure>
     
   </section>
  </div>
 
-  <section>
+  <section class="bottom_logo">
     <span class="icons--all aux_nav__logo-text" ></span>
   </section>
 </main>

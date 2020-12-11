@@ -1,17 +1,14 @@
-.carousel {
+.img__container {
     width: 100%;
 }
 
-.carousel figure {
+.img__container figure {
     width: 100%;
 }
 
-.carousel figure img {
+.img__container figure img {
     width: 100%;
-    height: 100%;
 }
-
-
 
 @media (min-width: 1200px){
 
@@ -19,7 +16,7 @@
         flex-direction: row;
     }
 
-    .carousel {
+    .img__container {
         width: 50%;
     }
 

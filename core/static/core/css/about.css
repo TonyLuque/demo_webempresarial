@@ -1,52 +1,24 @@
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
+.text h1 {
+    margin-bottom: 0.7rem;
 }
 
-section {
-    width: 75%;
+.text h4 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 3rem;
 }
 
-.header {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header span{
-    background-image: url('../img/espiga.svg');
-    width: 6.5rem;
-    height: 1.8rem;
-}
-
-.message {
-    display: inherit;
-    flex-direction: column;
-    width: 75%;
-}
-
-.text, .square {
+.square {
     width: 100%;
 }
 
 .square figure {
-    width: 100%;
     height: 99%;
 }
 
-.square figure img {
-    width: 100%;
-}
-
-
 @media (min-width: 1200px){
-    
-    .message {
-        flex-direction: row;
-    }
 
-    .text, .square {
+    .square {
         width: 50%;
     }
 
@@ -55,6 +27,5 @@ section {
         height: 49%;
         float: left;
     }
-
 
 }
