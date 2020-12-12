@@ -66,6 +66,11 @@ section {
     margin: 3rem 0;
 }
 
+.bottom_logo span {
+    width: 19.8rem;
+    height: 4.9rem;
+}
+
 @media (min-width: 1200px){
 
     .message {

@@ -1,13 +1,44 @@
 {% extends 'core/base.html' %}
-{% load static %}
 
 {% block title %}Servicios{% endblock %}
 
-{% block content %}
+{% load static %}
+
+{% block style %}
+<link href="{% static 'core/css/main_base.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'core/css/services.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %} 
+<!-- Cabecera -->
+<main>
+    <section class="header">
+      <span class="icons--all"></span>
+      <h1>Visitanos</h1>
+  </section>
+  
+  <!-- Mensaje -->
+    
+    <section class="text">
+        <h1>No necesitas cocinar elegante ni obras maestras. 
+        Solo buena comida con <span>ingredientes frescos</span>".</h1>
+        <h4>Julia Child</h4>
+    </section>
+
+    <section class="services__container">
     {% for service in services %}
-        <h2>{{ service.title }}</h2>
-        <h4>{{ service.subtitle }}</h4>
-        <img src="{{ service.image.url }}">
-        <p>{{ service.content }}</p>
+        <article class="services">
+            <figure><img src="{{ service.image.url }}"> </figure>
+            <div class="services__text">
+                <h2>{{ service.title }}</h2>
+                <h4>{{ service.subtitle }}</h4>
+                <p>{{ service.content }}</p>
+            </div>
+        </article>
     {% endfor %}
+    </section>
+
+    <section class="bottom_logo">
+        <span class="icons--all aux_nav__logo-text" ></span>
+    </section>
 {% endblock %}

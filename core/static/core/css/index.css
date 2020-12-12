@@ -15,10 +15,6 @@
 
 @media (min-width: 1200px){
 
-    .message {
-        flex-direction: row;
-    }
-
     .carousel {
         width: 50%;
     }
