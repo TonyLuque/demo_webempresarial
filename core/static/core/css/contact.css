@@ -1,0 +1,41 @@
+main {
+    height: 100vh;
+}
+
+.form {
+    width: 100%;
+}
+
+.ok {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 1rem;
+}
+
+.form label {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--brown_dark);
+}
+
+input[type=text], input[type=submit], input[type=email], select, textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray);
+    padding: .5rem;
+}
+
+input[type=submit] {
+    background-color: var(--brown);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+}
+
+input[type=submit]:hover {
+    background-color: var(--brown_dark);
+    color: var(--white);
+}

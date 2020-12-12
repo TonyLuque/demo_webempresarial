@@ -1,0 +1,81 @@
+.post__card figure {
+    width: 100%;
+}
+
+.post__card figure img {
+    width: 100%;
+}
+
+.post__card {
+    margin-bottom: 4rem;
+    background-color: white;
+}
+
+.post__card article {
+    padding: 2rem;
+    overflow-x: scroll;
+}
+
+.post__card h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--brown_dark);
+}
+
+.post__card h2 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+}
+
+.post__card p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--gray);
+}
+
+.post__card article ul {
+    list-style: circle;
+    padding-left: 3rem;
+}
+
+.post__card article ul li {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.post__card article p a {
+    color: var(--brown_dark);
+}
+
+@media (min-width: 1200px){
+
+    .post__card {
+        width: 100%;
+        background-color: var(--white);
+    }
+
+    .post__card figure {
+        width: 30%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .post__card article {
+        width: 70%;
+        padding: 3rem 4rem 2rem 15%;
+        background-color: white;
+        position: relative;
+        left: 20%;
+        top: -150px;   
+    }
+
+    .post__card article h1 {
+        font-size: 3rem;
+    }
+
+    .post__card article p {
+        font-size: 2rem;
+    }
+
+}

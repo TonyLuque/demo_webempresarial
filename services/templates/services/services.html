@@ -32,7 +32,7 @@
             <div class="services__text">
                 <h2>{{ service.title }}</h2>
                 <h4>{{ service.subtitle }}</h4>
-                <p>{{ service.content }}</p>
+                <p>{{ service.content|safe }}</p>
             </div>
         </article>
     {% endfor %}
