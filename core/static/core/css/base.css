@@ -19,7 +19,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .icons--all {
@@ -126,4 +126,18 @@ footer {
 .copy {
     color: var(--brown_dark);
     margin-top: 1.3rem;
+}
+
+@media (min-width: 1200px){
+
+    .menu {
+        width: 30rem;
+    }
+
+    .aux_nav {
+        width: 5rem;
+        height: 100vh;
+        position: fixed;
+    }
+
 }

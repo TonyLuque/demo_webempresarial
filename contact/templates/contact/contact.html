@@ -15,37 +15,42 @@
         <span class="icons--all"></span>
         <h1>Contacto</h1>
     </section>
-    <section>
-<!-- Formulario de contacto -->
-    <section class="form">
-        {% if 'ok' in request.GET %}
-            <p class="ok">Su mensaje se ha enviado correctamente, en breve nos pondremos en contacto con usted.</p>
-        {% endif %}
-        <form action="" method="POST">
-            {% csrf_token %}
-            <div>
-                <label>Nombre</label>
-                <div>{{form.name}}</div>
-                {{form.name.errors}}
-            </div>
-            <div>
-                <label>Email</label>
-                <div>{{form.email}}</div>
-                {{form.email.errors}}
-            </div>
-            <div>
-                <label>Mensaje</label>
-                <div>{{form.content}}</div>
-                {{form.content.errors}}
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-    </section>
+
+    <!-- Formulario de contacto -->
+    <div class="message">
+        <section class="form">
+            {% if 'ok' in request.GET %}
+                <p class="ok">Su mensaje se ha enviado correctamente, en breve nos pondremos en contacto con usted.</p>
+            {% endif %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                <div>
+                    <label>Nombre</label>
+                    <div>{{form.name}}</div>
+                    {{form.name.errors}}
+                </div>
+                <div>
+                    <label>Email</label>
+                    <div>{{form.email}}</div>
+                    {{form.email.errors}}
+                </div>
+                <div>
+                    <label>Mensaje</label>
+                    <div>{{form.content}}</div>
+                    {{form.content.errors}}
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <section class="message__img">
+            <figure><img src="{% static 'core/img/contacto.jpg' %}" alt=""></figure>
+        </section>
+    </div>
     <!-- Fin formulario de contacto -->
     <section class="bottom_logo">
         <span class="icons--all aux_nav__logo-text" ></span>
-      </section>
-    </main>
+    </section>
+</main>
 {% endblock %}
