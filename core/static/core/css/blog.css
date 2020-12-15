@@ -57,8 +57,8 @@
 
     .post__card figure {
         width: 30%;
-        position: relative;
-        z-index: 1;
+        /*position: relative;*/
+        top: 100px;
     }
 
     .post__card article {
@@ -66,8 +66,7 @@
         padding: 3rem 4rem 2rem 15%;
         background-color: white;
         position: relative;
-        left: 20%;
-        top: -150px;   
+        left: 20%;  
     }
 
     .post__card article h1 {

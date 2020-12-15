@@ -70,12 +70,13 @@ section {
 .bottom_logo span {
     width: 19.8rem;
     height: 4.9rem;
+    display: inline-block;
 }
 
 @media (min-width: 1200px){
 
     main {
-        height: auto;
+        height: 100vh;
     }
 
     .message {

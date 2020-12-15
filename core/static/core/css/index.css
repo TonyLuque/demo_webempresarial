@@ -1,5 +1,6 @@
 .carousel {
     width: 100%;
+    max-width: 460px;
 }
 
 .carousel figure {

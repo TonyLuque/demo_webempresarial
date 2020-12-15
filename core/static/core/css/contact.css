@@ -53,6 +53,7 @@ input[type=submit]:hover {
 .message__img {
     width: 100%;
     margin-top: 4rem;
+    max-width: 460px;
 }
 
 .message__img figure {

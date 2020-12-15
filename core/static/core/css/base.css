@@ -128,16 +128,41 @@ footer {
     margin-top: 1.3rem;
 }
 
+.active {
+    font-weight: bold;
+    color: var(--brown_dark);
+}
+
 @media (min-width: 1200px){
 
     .menu {
         width: 30rem;
     }
 
+    .menu__icon-close {
+        position: relative;
+        top: 50%;
+        background-image: url('../img/iconos/row_close.svg');
+    }
+
+    .menu__logo-image {
+        margin-top: 3rem;
+    }
+
     .aux_nav {
         width: 5rem;
         height: 100vh;
         position: fixed;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .aux_nav__logo-text {
+        display: none;
+    }
+
+    .aux_nav__icon-dots {
+        background-image: url('../img/iconos/row_open.svg');
     }
 
 }

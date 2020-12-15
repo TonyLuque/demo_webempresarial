@@ -26,6 +26,7 @@
 
 .img__container {
     width: 100%;
+    max-width: 460px;
 }
 
 .img__container figure {

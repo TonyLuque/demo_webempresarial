@@ -16,12 +16,12 @@
     <span class="icons--all menu__logo-image"></span>
     <nav>
         <ul>
-            <li><a href="{% url 'home' %}">Inicio</a></li>
-            <li><a href="{% url 'about' %}">Historia</a></li>
-            <li><a href="{% url 'services' %}">Servicios</a></li>
-            <li><a href="{% url 'store' %}">Visítanos</a></li>
-            <li><a href="{% url 'contact' %}">Contacto</a></li>
-            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}">Inicio</a></li>
+            <li><a href="{% url 'about' %}" class="{% if request.path == '/about/' %}active{% endif %}">Historia</a></li>
+            <li><a href="{% url 'services' %}" class="{% if request.path == '/services/' %}active{% endif %}">Servicios</a></li>
+            <li><a href="{% url 'store' %}" class="{% if request.path == '/store/' %}active{% endif %}">Visítanos</a></li>
+            <li><a href="{% url 'contact' %}" class="{% if request.path == '/contact/' %}active{% endif %}">Contacto</a></li>
+            <li><a href="{% url 'blog' %}" class="{% if request.path == '/blog/' %}active{% endif %}">Blog</a></li>
         </ul>
     </nav>
     <!-- Pié de página -->
@@ -47,7 +47,7 @@
       <p class="copy" >&copy; Esponjocitos 2020</p>
     </footer>
   </header>
-  <section class="aux_nav" >
+  <section id="aux_nav" class="aux_nav" >
     <span class="icons--all aux_nav__logo-text" ></span>
     <span onclick="menu()" class="icons--all aux_nav__icon-dots"></span>
   </section>
@@ -57,8 +57,14 @@
     function menu(){
         if (document.getElementById("menu").style.display == "none" || document.getElementById("menu").style.display == ""){
             document.getElementById("menu").style.display = "flex";
+            if (screen.width >= 1200){
+              document.getElementById("aux_nav").style.display = "none";
+            }
         } else {
             document.getElementById("menu").style.display = "none";
+            if (screen.width >= 1200){
+              document.getElementById("aux_nav").style.display = "flex";
+            }
         }
     }
   </script>
