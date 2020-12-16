@@ -1,3 +1,27 @@
+@keyframes img-1 {
+    0%{background-image: url('../img/historia_1_a.jpg');}
+    50% {background-image: url('../img/historia_1_b.jpg');}
+    100%{background-image: url('../img/historia_1_a.jpg');}
+}
+
+@keyframes img-2 {
+    0%{background-image: url('../img/historia_2_b.jpg');}
+    50% {background-image: url('../img/historia_2_a.jpg');}
+    100%{background-image: url('../img/historia_2_b.jpg');}
+}
+
+@keyframes img-3 {
+    0%{background-image: url('../img/historia_3_a.jpg');}
+    50% {background-image: url('../img/historia_3_b.jpg');}
+    100%{background-image: url('../img/historia_3_a.jpg');}
+}
+
+@keyframes img-4 {
+    0%{background-image: url('../img/historia_4_b.jpg');}
+    50% {background-image: url('../img/historia_4_a.jpg');}
+    100%{background-image: url('../img/historia_4_b.jpg');}
+}
+
 .text h1 {
     margin-bottom: 0.7rem;
 }
@@ -10,22 +34,61 @@
 
 .square {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .square figure {
-    height: 99%;
+    height: 240px;
+    width: 240px;
+    float: left;
+}
+
+.square figure img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-1 {
+    background-image: url('../img/historia_1_a.jpg');
+    animation-name: img-1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.img-2 {
+    background-image: url('../img/historia_2_b.jpg');
+    animation-name: img-2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.img-3 {
+    background-image: url('../img/historia_3_a.jpg');
+    animation-name: img-3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.img-4 {
+    background-image: url('../img/historia_4_b.jpg');
+    animation-name: img-4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 @media (min-width: 1200px){
 
     .square {
         width: 50%;
+        display: block;
     }
 
     .square figure {
         width: 50%;
-        height: 49%;
-        float: left;
     }
 
 }

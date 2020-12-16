@@ -158,6 +158,7 @@ footer {
         position: fixed;
         justify-content: center;
         flex-direction: column;
+        transition: .7s;
     }
 
     .aux_nav__logo-text {
