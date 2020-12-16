@@ -31,7 +31,7 @@ html {
 
 .menu{
     background-color: var(--light_purple);
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -40,6 +40,8 @@ html {
     width: 100vw;
     font-size: 1.6rem;
     position: fixed;
+    left: -100vw;
+    transition: .5s;
 }
 
 .menu__icon-close {
@@ -137,6 +139,7 @@ footer {
 
     .menu {
         width: 30rem;
+        left: -300px;
     }
 
     .menu__icon-close {

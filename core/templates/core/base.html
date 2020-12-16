@@ -56,16 +56,21 @@
 
   <script>
     function menu(){
-        if (document.getElementById("menu").style.display == "none" || document.getElementById("menu").style.display == ""){
-            document.getElementById("menu").style.display = "flex";
-            if (screen.width >= 1200){
-              document.getElementById("aux_nav").style.display = "none";
-            }
+        
+        if (screen.width >= 1200){
+          if (document.getElementById("menu").style.left == "-300px" || document.getElementById("menu").style.left == ""){
+            document.getElementById("menu").style.left = "0";
+            document.getElementById("aux_nav").style.display = "none";
+          } else {
+            document.getElementById("menu").style.left = "-300px";
+            document.getElementById("aux_nav").style.display = "flex";
+          }
         } else {
-            document.getElementById("menu").style.display = "none";
-            if (screen.width >= 1200){
-              document.getElementById("aux_nav").style.display = "flex";
-            }
+          if (document.getElementById("menu").style.left == "-100vw" || document.getElementById("menu").style.left == ""){
+            document.getElementById("menu").style.left = "0";
+          } else {
+            document.getElementById("menu").style.left = "-100vw";
+          }
         }
     }
   </script>
