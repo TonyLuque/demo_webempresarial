@@ -33,6 +33,7 @@ section {
     display: inherit;
     flex-direction: column;
     width: 75%;
+    align-items: center;
 }
 
 .text {
