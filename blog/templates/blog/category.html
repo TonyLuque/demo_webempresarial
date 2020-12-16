@@ -1,18 +1,42 @@
 {% extends 'core/base.html' %}
+
+{% block title %}Blog{% endblock %}
+
 {% load static %}
 
+{% block style %}
+<link href="{% static 'core/css/main_base.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'core/css/blog.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
 {% block content %}
-{% for post in category.post_set.all %}
-    <h2>{{post.title}}</h2>
-    <h1>{{post.published}}</h1>
-    <!--<h1>{{post.published|date:"SHORT_DATE_FORMAT"}}</h1>-->
-    <img src="{{post.image.url}}">
-    <p>{{post.content|linebreaks}}</p>
-    <p>Publicado por {{post.author}}</p>
-    <p>Categorias:
-        {% for category in post.categories.all %}
-            <a href="{% url 'category' category.id %}">{{category.name}}</a> {% if not forloop.last %}, {% endif %}
+
+<main>
+    <section class="header">
+        <span class="icons--all"></span>
+        <h1>Blog</h1>
+    </section>
+    <section>
+        {% for post in category.post_set.all %}
+        <div class="post__card">
+            <figure><img src="{{post.image.url}}"></figure>
+            <article>
+                <h1>{{post.title}}</h1>
+                <h2>{{post.published}}</h2>
+                <!--<h1>{{post.published|date:"SHORT_DATE_FORMAT"}}</h1>-->
+                <p>{{post.content|safe}}</p>
+                <p>Publicado por {{post.author}}</p>
+                <p>Categorias:
+                    {% for category in post.categories.all %}
+                        <a href="{% url 'category' category.id %}">{{category.name}}</a> {% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
+            </article>
+        </div>
         {% endfor %}
-    </p>
-{% endfor %}
+    </section>
+    <section class="bottom_logo">
+        <span class="icons--all aux_nav__logo-text" ></span>
+    </section>
+</main>
 {% endblock %}
