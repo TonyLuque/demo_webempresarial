@@ -90,6 +90,7 @@ section {
 
     .message {
         flex-direction: row;
+        max-width: 95rem;
     }
 
     .text {
@@ -99,11 +100,13 @@ section {
 
     .text h1 {
         font-size: 3.6rem;
+        max-width: 46rem;
     }
 
     .text p {
         font-size: 2rem;
         line-height: 2.6rem;
+        max-width: 46rem;
     }
 
 }
