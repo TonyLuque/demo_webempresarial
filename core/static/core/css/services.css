@@ -4,6 +4,7 @@
 
 .text h1 {
     margin-bottom: 0.7rem;
+    max-width: none;
 }
 
 .text h4 {
@@ -42,4 +43,12 @@
 .services__text p {
     color: var(--gray);
     font-size: 1.6rem;
+}
+
+@media (min-width: 1200px){
+
+    .services:nth-child(even) {
+        background-color: white;
+    }
+
 }
