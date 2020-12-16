@@ -91,4 +91,14 @@
         width: 50%;
     }
 
+    .img-3 {
+        background-image: url('../img/historia_4_b.jpg');
+        animation-name: img-4;
+    }
+
+    .img-4 {
+        background-image: url('../img/historia_3_a.jpg');
+        animation-name: img-3;
+    }
+
 }
