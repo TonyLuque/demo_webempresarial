@@ -42,6 +42,7 @@ html {
     position: fixed;
     left: -100vw;
     transition: .5s;
+    z-index: 1;
 }
 
 .menu__icon-close {
