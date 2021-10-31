@@ -11,3 +11,4 @@ Este proyecto fue realizado con Django como Framework de desarrollo, para el Fro
 Es una página empresarial en la que se muestra la información de la empresa, un formulario para poderse contactar y un apartado en el que la empresa puede publicar contenido.
 
 Este contenido la empresa lo puede administrar a travez de un panel administartivo.
+![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/TonyLuque/demo_webempresarial/screenshots/admin_blog.png)
